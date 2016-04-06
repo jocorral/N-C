@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 
-
+//joseba la chupa, y lo sabes!!!!!!
 int main(void){
 	int dec1;
 	printf("Hola, bienvenido a N&C \n"
