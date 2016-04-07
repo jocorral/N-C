@@ -7,11 +7,10 @@
 
 #include <stdio.h>
 
-//joseba la chupa, y lo sabes!!!!!!
 int main(void){
 	int dec1;
 	printf("Hola, bienvenido a N&C \n"
-			"Por favor, elija una opción:\n"
+			"Por favor, elija una opciÃ³n:\n"
 			"1. Log in\n"
 			"2. Crear usuario");
 	fflush(stdout);
