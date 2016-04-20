@@ -6,11 +6,10 @@
  */
 
 #include <stdio.h>
-#include <stdlib.h>
+
 
 int main(void){
-	char * dec1;
-	dec1 = (char*)malloc(10*sizeof(char));
+	char dec1;
 	char *usuario;
 	usuario = (char*)malloc(21*sizeof(char));
 	char *contrasenya;
@@ -19,68 +18,43 @@ int main(void){
 	char *apellido;
 
 	printf("Hola, bienvenido a N&C \n"
-			"Por favor, elija una opción:\n"
+			"Por favor, elija una opcion:\n"
 			"1. Log in\n"
 			"2. Crear usuario\n");
 	fflush(stdout);
-	fgets(dec1, 10, stdin);
-	if(dec1[0] == '1'){
-		printf("Introduzca usuario y contraseña:\n"
+	dec1 = getchar();
+	switch(dec1){
+	case '1':
+		printf("Introduzca usuario y contrasena:\n"
 				"Usuario:\n");
 		fflush(stdout);
 		fgets(usuario, 21, stdin);
 		printf("%c", usuario[0]);
-		printf("%c", usuario[1]);
 
-		printf("Contraseña:\n");
+		printf("Contrasena:\n");
 		fflush(stdout);
 
 		//Coger contraseña
 
 
-	}else if(dec1[0] == '2'){
-		do{
-		printf("CREACIÓN DE NUEVO USUARIO\n--------------------------\nIntroduzca su nombre:\n");
+		break;
+	case '2':
+		printf("CREACION DE NUEVO USUARIO\n--------------------------\nIntroduzca su nombre:\n");
 		fflush(stdout);
-		//TODO Coger nombre
+
 		printf("Primer apellido:\n");
 		fflush(stdout);
-		//TODO Coger apellido
+
 		printf("Introduzca nombre de usuario:\n");
 		fflush(stdout);
-		//TODO Coger nick
-		printf("Introduzca contraseña:\n");
+
+		printf("Introduzca contrasena:\n");
 		fflush(stdout);
-		//TODO Coger contraseña
-		printf("Repita la contraseña:\n");
-		//TODO Coger contraseña
-		}while(contrasenya != contrasenya2);
-		int contMusica = 2;
-		printf("GUSTOS\n----------\nMusica (puedes elegir hasta dos de los siguientes):\n  1. Pop\n"
-				"2. Rock\n3. Rap\n4. EDM\n5. Heavy\n6. Reggae\n7. Reggaeton\n8.Clasica");
-		//TODO DecMusica declarar y recoger
-		char decMuscia;
-		while(contMusica > 0){
-			if(decMusica == '1'){
 
-			}else if(decMusica == '2'){
+		printf("Repita la contrasena:\n");
+		fflush(stdout);
 
-			}else if(decMusica == '3'){
-
-			}else if(decMusica == '4'){
-
-			}else if(decMusica == '5'){
-
-			}else if(decMusica == '6'){
-
-			}else if(decMusica == '7'){
-
-			}else if(decMusica == '8'){
-
-			}
-			contMusica--;
-		}
-
+		break;
 	}
 
 	return 0;
