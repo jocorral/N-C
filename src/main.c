@@ -34,7 +34,7 @@ int main(void){
 		printf("Contrasena:\n");
 		fflush(stdout);
 
-		//Coger contraseña
+		//Coger contrasena
 
 
 		break;
